@@ -14,6 +14,7 @@ import android.widget.Toast;
 public class MessageActivity extends Fragment {
 	TextView tv_message;
 
+	//创建view
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
@@ -21,12 +22,14 @@ public class MessageActivity extends Fragment {
 		return inflater.inflate(R.layout.activity_message, container, false);
 	}
 	
+	//创建布局
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onActivityCreated(savedInstanceState);
 		initView();
 	}
+	
 	private void initView() {
 		// TODO Auto-generated method stub
 		tv_message=(TextView) getView().findViewById(R.id.message_tv_message);
